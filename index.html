@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Codifique e decodifique uma mensagem.">
+<title>Let's Code</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+            
+            <header class="inicio">
+                <img src="img/logo.png">
+                <h1>Let's Code</h1>
+            </header>
+            <main class="container">
+            <div class="container-input">
+                <div class="input">
+                    <h2>Codifique ou decodifique uma mensagem</h2>
+                    <textarea  id="todecode" placeholder="Digite seu texto aqui" cols="30" 1rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <label for="cryptomethod">Selecione o método</label>
+                    <select id="cryptomethod">
+                        <option id="selectcdc" value="cdc">Cifra de César</option>
+                        <option id="selectb64" value="b64">Base64</option>
+                    </select>    
+                </div>
+                <div class="input" id="divskip">
+                    <label for="skip">Insira a quantidade de saltos:</label>
+                    <input type="number" id="skip">
+                </div>
+            </div>
+            <div>
+                <input type="radio" checked="checked" name="radiocode" onclick="document.getElementById('crypto').innerHTML = 'Codificar mensagem'" id="code" value="rcode">
+                <label for="code">Codificar</label>
+                <input type="radio" name="radiocode" onclick="document.getElementById('crypto').innerHTML = 'Decodificar mensagem'" id="decode" value="rdecode">
+                <label for="decode">Decodificar</label>
+            </div>
+            <div class="button">
+                <div class="containerbtn">
+                    <button class="btncrypto" id="btncrypto" onclick="crypto()"> Codificar mensagem</button>
+                </div>
+                <div>
+                    <label for="cryptoresult"></label></p>
+                    <textarea id="cryptoresult" disabled rows="4" cols="50"></textarea>
+                </div>
+            </div>
+        </main>
+        <footer class="rodape">
+            <div class="icon">
+                <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-github"></ion-icon></a>           
+                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+        </footer>
+
+        <script type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="script/jquery-3.6.1.js"></script>
+<script src="script/script.js"></script>
+</body>
+</html>
