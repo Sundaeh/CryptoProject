@@ -12,7 +12,7 @@
 <body>
             
             <header class="inicio">
-                <img src="img/logo.png">
+                <img id ="logo" src="img/logo.png">
                 <h1>Let's Code</h1>
             </header>
             <main class="container">
@@ -21,19 +21,19 @@
                     <h2>Codifique ou decodifique uma mensagem</h2>
                     <textarea  id="todecode" placeholder="Digite seu texto aqui" cols="30" 1rows="10"></textarea>
                 </div>
-                <div class="input">
-                    <label for="cryptomethod">Selecione o método</label>
+                <div class="inputmethod">
+                    <label for="cryptomethod">Selecione o método:</label>
                     <select id="cryptomethod">
                         <option id="selectcdc" value="cdc">Cifra de César</option>
                         <option id="selectb64" value="b64">Base64</option>
                     </select>    
                 </div>
                 <div class="input" id="divskip">
-                    <label for="skip">Insira a quantidade de saltos:</label>
+                    <label for="skip">Escolha a quantidade de saltos:</label>
                     <input type="number" id="skip">
                 </div>
             </div>
-            <div>
+            <div class="coderadio">
                 <input type="radio" checked="checked" name="radiocode" onclick="document.getElementById('crypto').innerHTML = 'Codificar mensagem'" id="code" value="rcode">
                 <label for="code">Codificar</label>
                 <input type="radio" name="radiocode" onclick="document.getElementById('crypto').innerHTML = 'Decodificar mensagem'" id="decode" value="rdecode">
@@ -51,7 +51,7 @@
         </main>
         <footer class="rodape">
             <div class="icon">
-                <h3>Suanny Rodrigues</h3>
+                <p>Suanny Rodrigues</p>
                 <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
                 <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
                 <a href=""><ion-icon name="logo-github"></ion-icon></a>           
