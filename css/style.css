@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2? family= Oswald:wght@300;400;500 & display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Oswald:wght@300;400;500 & family= Permanent+Marker &família = Sarala & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Oswald:wght@300;400;500 & family= Peralta & family= Permanent+Marker & family= Sarala & display=swap' );
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Oswald:wght@300;400;500&family=Peralta&family=Permanent+Marker&family=Sarala&display=swap');
 
 *{
     margin: 0;
@@ -67,7 +69,7 @@ h2{
    /*Alterar a borda*/
 }
 
-#divskip{
+#divskip{/*Container dos saltos*/
     display: flex;
     font-family: 'Sarala', sans-serif;
     font-size: 20px;
@@ -83,7 +85,7 @@ h2{
 
 .coderadio{/*Modificar a cor das labels*/
     font-family: 'Oswald', sans-serif;
-    color: #000000;
+    color:#DCDCDC;
 }
 
 .button{
@@ -91,3 +93,17 @@ h2{
     
 }
 
+.rodape{
+    background-color: #4682B4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+  padding-top: 10px;
+}

@@ -91,9 +91,10 @@ $(document).ready(function() {
             }                
             }
             console.log(palavraCifrada);
+            document.getElementById('cryptoresult') = palavraCifrada;
     
         cifrar64 (palavra)
-            const crypto = document.querySelector(('input[name="radiocode"]:checked').value = btoa((palavra).slice(0,-2)));
+            const crypto = document.querySelector(('input[name="radiocode"]:checked').value = btoa((palavra).slice(0,-1)));
             if( crypto === 'rcode'){
                 document.getElementById('cryptoresult').value = btoa(palavra.value)
             } else if (crypto === 'rdecode'){
@@ -103,5 +104,6 @@ $(document).ready(function() {
                   }
                 
     let cifrador = new GerenciadorCriptografia();
+    
     
 });
